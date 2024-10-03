@@ -1,0 +1,109 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	font-family: 'Arial', sans-serif;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+}
+
+.poster {
+	position: relative;
+	width: 90%;
+	max-width: 400px;
+	text-align: center;
+	overflow: hidden;
+}
+
+.background-image {
+	width: 100%;
+    margin-top: -30%;
+}
+.event-title {
+	font-size: 3rem;
+	margin: 20px 0 10px; 
+}
+.dj-names {
+	font-size: 1.2rem;
+	background: #673ab7;
+	display: inline-block;
+	padding: 5px 20px;
+	border-radius: 25px;
+	margin-bottom: 20px;
+}
+
+.event-details {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.detail {
+	flex: 1;
+	background: rgba(0, 0, 0, 0.7);
+	padding: 10px;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.ticket-info {
+	margin-top: 20px;
+	font-size: 0.9rem;
+}
+
+a {
+	color: #fff;
+	text-decoration: underline;
+
+}
+
+@media (min-width: 600px) {
+	.poster {
+		max-width: 600px;
+	}
+
+	.event-title {
+		font-size: 4rem;
+	}
+
+	.dj-names {
+		font-size: 1.5rem;
+		padding: 10px 30px;
+	}
+
+	.event-details {
+		gap: 20px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.poster {
+		max-width: 800px;
+	}
+
+	.event-title {
+		font-size: 5rem;
+	}
+
+	.detail {
+		padding: 20px;
+	}
+
+	.ticket-info {
+		font-size: 1.2rem;
+	}
+}
+
+.event-details {
+	display: flex;
+	justify-content: space-around;
+}
